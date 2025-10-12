@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{%block content%}
+<!-- Cards Section -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+    {%for i in ctg%}
+    <div class="card bg-base-100 shadow-xl">
+        <div class="card-body">
+            <h2 class="card-title">{{i.request}}</h2>
+            <!--            <p>{{response_a}}</p>-->
+            <button class="btn btn-primary mt-2">{{i.response_a}}</button>
+            <button class="btn btn-primary mt-2">{{i.response_b}}</button>
+            <button class="btn btn-primary mt-2">{{i.response_c}}</button>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+
+{%endblock%}
